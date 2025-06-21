@@ -47,3 +47,9 @@ mkdir -p ./ollama
 
 # Run the container
 docker compose up -d
+```
+
+## Pull The Model
+```bash
+curl -X POST http://localhost:11434/api/pull -d '{"name": "llama3"}'
+```
