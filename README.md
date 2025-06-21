@@ -53,3 +53,11 @@ docker compose up -d
 ```bash
 curl -X POST http://localhost:11434/api/pull -d '{"name": "llama3"}'
 ```
+
+## Run the Model
+```bash
+curl -X POST http://localhost:11434/api/generate -d '{
+  "model": "llama3",
+  "prompt": "What is quantum computing?"
+}'
+```
